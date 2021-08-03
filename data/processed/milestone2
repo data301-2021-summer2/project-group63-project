@@ -280,7 +280,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 176,
+   "execution_count": 227,
    "id": "19aaf979-2d8c-46c1-be99-49a8e9ccc087",
    "metadata": {},
    "outputs": [
@@ -497,7 +497,7 @@
        "[29110 rows x 9 columns]"
       ]
      },
-     "execution_count": 176,
+     "execution_count": 227,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -513,7 +513,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 177,
+   "execution_count": 224,
    "id": "43e554d4-eabb-4e97-b5da-eec724e2f1bf",
    "metadata": {},
    "outputs": [],
@@ -530,7 +530,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 178,
+   "execution_count": 225,
    "id": "25cfa3f7-8891-4d90-a344-2fbc98f784f1",
    "metadata": {},
    "outputs": [
@@ -747,7 +747,7 @@
        "[29110 rows x 9 columns]"
       ]
      },
-     "execution_count": 178,
+     "execution_count": 225,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -19847,7 +19847,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 182,
+   "execution_count": 228,
    "id": "dd951e7e-bbee-4ba3-afba-33137d89ebfa",
    "metadata": {},
    "outputs": [
@@ -19857,7 +19857,7 @@
        "<AxesSubplot:xlabel='Temperature', ylabel='Humidity'>"
       ]
      },
-     "execution_count": 182,
+     "execution_count": 228,
      "metadata": {},
      "output_type": "execute_result"
     },
@@ -20085,8 +20085,79 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 235,
    "id": "b6095542-ac09-499f-b9f6-f7693be1365f",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "cannot insert Temp_Class, already exists",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "\u001b[0;32m/var/folders/x8/pjzn1qsd1rx71qd9km1hjct40000gn/T/ipykernel_49535/1920790592.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# adding a column that categorizes the temperatures in order to see if different temperature cagtegories have different observation rates\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0mTemp_Class\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mpd\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcut\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mdf1\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mTemperature\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mbins\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m15\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m20\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m25\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m30\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m35\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m40\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mlabels\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m4\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m5\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mdf1\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0minsert\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m5\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'Temp_Class'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mTemp_Class\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;32m~/opt/miniconda3/lib/python3.8/site-packages/pandas/core/frame.py\u001b[0m in \u001b[0;36minsert\u001b[0;34m(self, loc, column, value, allow_duplicates)\u001b[0m\n\u001b[1;32m   3494\u001b[0m         \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_ensure_valid_index\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mvalue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   3495\u001b[0m         \u001b[0mvalue\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_sanitize_column\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcolumn\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mvalue\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mbroadcast\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mFalse\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 3496\u001b[0;31m         \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_data\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0minsert\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mloc\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mcolumn\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mvalue\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mallow_duplicates\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mallow_duplicates\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   3497\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   3498\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0massign\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m->\u001b[0m \u001b[0;34m\"DataFrame\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m~/opt/miniconda3/lib/python3.8/site-packages/pandas/core/internals/managers.py\u001b[0m in \u001b[0;36minsert\u001b[0;34m(self, loc, item, value, allow_duplicates)\u001b[0m\n\u001b[1;32m   1171\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0mallow_duplicates\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0mitem\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mitems\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1172\u001b[0m             \u001b[0;31m# Should this be a different kind of error??\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1173\u001b[0;31m             \u001b[0;32mraise\u001b[0m \u001b[0mValueError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"cannot insert {item}, already exists\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1174\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1175\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0misinstance\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mloc\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mValueError\u001b[0m: cannot insert Temp_Class, already exists"
+     ]
+    }
+   ],
+   "source": [
+    "# adding a column that categorizes the temperatures in order to see if different temperature cagtegories have different observation rates\n",
+    "Temp_Class = pd.cut(df1.Temperature,bins=[15,20,25,30,35,40],labels=[1,2,3,4,5])\n",
+    "df1.insert(5,'Temp_Class',Temp_Class)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 248,
+   "id": "eb6f442c-0c9d-484c-be7b-57bd338a7a70",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "Text(0.5, 1.0, 'Number of Total Birds Observed by Temperature Class')"
+      ]
+     },
+     "execution_count": 248,
+     "metadata": {},
+     "output_type": "execute_result"
+    },
+    {
+     "data": {
+      "image/png": "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\n",
+      "text/plain": [
+       "<Figure size 432x288 with 1 Axes>"
+      ]
+     },
+     "metadata": {
+      "needs_background": "light"
+     },
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "dftemp_class = df1[['Temp_Class', 'Common_Name']]\n",
+    "dftemp_class = dftemp_class.groupby(by='Temp_Class', as_index=False).count()\n",
+    "sns.barplot(x='Temp_Class',y='Common_Name',data=dftemp_class, palette='summer').set_title('Number of Total Birds Observed by Temperature Class')\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0b72d5f8-ea40-430d-9bd9-78431835a140",
+   "metadata": {},
+   "source": [
+    "This plot shows that the large majority of observations are made in Temperature Class 2, which further suggests that birds are more likely to be observed in moderate temperatures, rather than high temperatures. \n",
+    "\n",
+    "In the future, it will be necessary to account for temperature levels when doing bird surveys, as high temperatures can cause birds to become harder to observe. Without accounting for this, there may be a sampling bias that would point towards a decrease in population numbers that is not accurate."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bff070eb-afc1-4b32-a85a-d5ba46bdf6de",
    "metadata": {},
    "outputs": [],
    "source": []
