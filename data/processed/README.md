@@ -1,1 +1,1 @@
-Here, we have a directory for each milestone that contains the data files for the respective milestone. 
+Here, you can find the csv file of the processed data that was used to create the dashboard.

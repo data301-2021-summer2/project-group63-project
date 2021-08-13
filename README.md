@@ -1,12 +1,5 @@
 # Group 063 - {NCR Breeding Birds}
 
-- Your title can change over time.
-
-## Milestones
-
-- Milestone 1
-Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
-
 ## Describe your topic/interest in about 150-200 words
 
 {I am interested in looking at the change over time in abundance/density of breeding birds. Avian ecology is a fantastic way to get a bigger-picture idea of the general health of an ecosystem, as health of individual populations rely on so many factors within the ecosystem.
@@ -23,6 +16,6 @@ This is the kind of work im interested in pursuing further both in a Master's an
 
 - Evan Lewis: I am a fifth year Ecology and Evolutionary Biology major. My academic interests revolve around avian migratory behaviour and the evolutionary aspects of birdsong.
 
-## References
+## Final Presentation
 
-{Add your stuff here}
+[Here](https://youtu.be/XBjAd8uIIpc) is the link to my explainer video. Thanks for your time this semester!

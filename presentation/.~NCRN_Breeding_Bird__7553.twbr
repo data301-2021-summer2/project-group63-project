@@ -1,0 +1,775 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='processed_data' inline='true' name='federated.1m8rx830la95h41b10xb2198ughw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='processed_data' name='textscan.0gaszyu1lp2ukp13j9cmr09ywz6e'>
+            <connection class='textscan' directory='/Users/evanlewis/data301/Project/project-group53-project/data/processed' filename='processed_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0gaszyu1lp2ukp13j9cmr09ywz6e' name='processed_data.csv' table='[processed_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Site' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Species' ordinal='3' />
+            <column datatype='real' name='Temperature' ordinal='4' />
+            <column datatype='string' name='Temp_Range' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0gaszyu1lp2ukp13j9cmr09ywz6e' name='processed_data.csv' table='[processed_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Site' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Species' ordinal='3' />
+            <column datatype='real' name='Temperature' ordinal='4' />
+            <column datatype='string' name='Temp_Range' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[processed_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[processed_data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_data.csv_8AE56A52E11D4122BF2E542CAB1ACC4D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Site]</local-name>
+            <parent-name>[processed_data.csv]</parent-name>
+            <remote-alias>Site</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_data.csv_8AE56A52E11D4122BF2E542CAB1ACC4D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[processed_data.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_data.csv_8AE56A52E11D4122BF2E542CAB1ACC4D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Species]</local-name>
+            <parent-name>[processed_data.csv]</parent-name>
+            <remote-alias>Species</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_data.csv_8AE56A52E11D4122BF2E542CAB1ACC4D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temperature]</local-name>
+            <parent-name>[processed_data.csv]</parent-name>
+            <remote-alias>Temperature</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_data.csv_8AE56A52E11D4122BF2E542CAB1ACC4D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temp_Range</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Temp_Range]</local-name>
+            <parent-name>[processed_data.csv]</parent-name>
+            <remote-alias>Temp_Range</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_data.csv_8AE56A52E11D4122BF2E542CAB1ACC4D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+      <column caption='Temp Range' datatype='string' name='[Temp_Range]' role='dimension' type='nominal' />
+      <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='processed_data.csv' datatype='table' name='[__tableau_internal_object_id__].[processed_data.csv_8AE56A52E11D4122BF2E542CAB1ACC4D]' role='measure' type='quantitative' />
+      <column-instance column='[Temperature]' derivation='Avg' name='[avg:Temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Species]' derivation='Count' name='[cnt:Species:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Temperature]' derivation='Count' name='[cnt:Temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Temperature]' derivation='Sum' name='[sum:Temperature:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Species)' hidden='true' name='[Action (Species)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Species]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1m8rx830la95h41b10xb2198ughw].[avg:Temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1m8rx830la95h41b10xb2198ughw].[cnt:Temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1m8rx830la95h41b10xb2198ughw].[cnt:Species:qk]:1&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1m8rx830la95h41b10xb2198ughw].[avg:Temperature:qk]:1&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1m8rx830la95h41b10xb2198ughw].[sum:Temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1m8rx830la95h41b10xb2198ughw].[cnt:Species:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='processed_data.csv' id='processed_data.csv_8AE56A52E11D4122BF2E542CAB1ACC4D'>
+            <properties context=''>
+              <relation connection='textscan.0gaszyu1lp2ukp13j9cmr09ywz6e' name='processed_data.csv' table='[processed_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Site' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='string' name='Species' ordinal='3' />
+                  <column datatype='real' name='Temperature' ordinal='4' />
+                  <column datatype='string' name='Temp_Range' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1m8rx830la95h41b10xb2198ughw'>
+      <datasources>
+        <datasource caption='processed_data' name='federated.1m8rx830la95h41b10xb2198ughw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1m8rx830la95h41b10xb2198ughw'>
+        <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Species]' derivation='None' name='[none:Species:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]'>
+        <groupfilter function='level-members' level='[none:Species:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]' />
+      </filter>
+      <filter class='quantitative' column='[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]' included-values='in-range'>
+        <min>2007</min>
+        <max>2012</max>
+        <target field='[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_D53D1C39B7C44A0DA166FA980417A75A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='NCRN Breeding Bird Dashboard' type='sheet' worksheet='Count of species ' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='NCRN Breeding Bird Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Count of species '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Observations by Species
+</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>Count of observations for each Species. The data is filtered on Year, which ranges from 2007 to 2017. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_data' name='federated.1m8rx830la95h41b10xb2198ughw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m8rx830la95h41b10xb2198ughw'>
+            <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Species]' derivation='Count' name='[cnt:Species:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Species]' derivation='None' name='[none:Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1m8rx830la95h41b10xb2198ughw].[cnt:Species:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]</column>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]</rows>
+        <cols>[federated.1m8rx830la95h41b10xb2198ughw].[cnt:Species:qk]</cols>
+      </table>
+      <simple-id uuid='{CA947007-4CEB-4207-B7D1-D4D9BF78C7CB}' />
+    </worksheet>
+    <worksheet name='Number of Birds Oberved at Each Site'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>Count of observations for each site. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_data' name='federated.1m8rx830la95h41b10xb2198ughw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m8rx830la95h41b10xb2198ughw'>
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Species]' derivation='Count' name='[cnt:Species:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Species]' derivation='None' name='[none:Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1m8rx830la95h41b10xb2198ughw].[Action (Species)]'>
+            <groupfilter function='level-members' level='[Species]' user:ui-action-filter='[Action1_D53D1C39B7C44A0DA166FA980417A75A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]</column>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]</column>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[Action (Species)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1m8rx830la95h41b10xb2198ughw].[cnt:Species:qk]' scope='cols' value='Number of observations' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1m8rx830la95h41b10xb2198ughw].[none:Site:nk]</rows>
+        <cols>[federated.1m8rx830la95h41b10xb2198ughw].[cnt:Species:qk]</cols>
+      </table>
+      <simple-id uuid='{59DD6814-8E90-4FAF-82E3-CC1ED2CE8E8E}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_data' name='federated.1m8rx830la95h41b10xb2198ughw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m8rx830la95h41b10xb2198ughw'>
+            <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Species]' derivation='Count' name='[cnt:Species:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Species]' derivation='None' name='[none:Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]</column>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1m8rx830la95h41b10xb2198ughw].[cnt:Species:qk]</rows>
+        <cols>[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{B6FF975C-0266-4B7F-85FF-00207B14661B}' />
+    </worksheet>
+    <worksheet name='Temperature and Number of Observations by Year'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>The trends of total observations and Average Temperature for Year.  Orange represents the number of observations and blue represents the average temperature. As the figure shows, there is an inverse relationship between the temperature and the observations. As the temperature increases like in 2012, the observations decrease. When the temperature is low like in 2014, the observations increase</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_data' name='federated.1m8rx830la95h41b10xb2198ughw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m8rx830la95h41b10xb2198ughw'>
+            <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='Avg' name='[avg:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Species]' derivation='Count' name='[cnt:Species:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Species]' derivation='None' name='[none:Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1m8rx830la95h41b10xb2198ughw].[Action (Species)]'>
+            <groupfilter function='level-members' level='[Species]' user:ui-action-filter='[Action1_D53D1C39B7C44A0DA166FA980417A75A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]</column>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]</column>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[Action (Species)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1m8rx830la95h41b10xb2198ughw].[avg:Temperature:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1m8rx830la95h41b10xb2198ughw].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1m8rx830la95h41b10xb2198ughw].[cnt:Species:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1m8rx830la95h41b10xb2198ughw].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1m8rx830la95h41b10xb2198ughw].[avg:Temperature:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1m8rx830la95h41b10xb2198ughw].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1m8rx830la95h41b10xb2198ughw].[cnt:Species:qk] + [federated.1m8rx830la95h41b10xb2198ughw].[avg:Temperature:qk])</rows>
+        <cols>[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{C03DA467-D63C-4A91-8409-87098651391B}' />
+    </worksheet>
+    <worksheet name='temp by year '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_data' name='federated.1m8rx830la95h41b10xb2198ughw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m8rx830la95h41b10xb2198ughw'>
+            <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='Avg' name='[avg:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Species]' derivation='None' name='[none:Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]</column>
+            <column>[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1m8rx830la95h41b10xb2198ughw].[avg:Temperature:qk]</rows>
+        <cols>[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{1328D3D3-2397-4627-A0EF-EDDC6374E296}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='NCRN Breeding Bird Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='processed_data' name='federated.1m8rx830la95h41b10xb2198ughw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1m8rx830la95h41b10xb2198ughw'>
+        <column datatype='string' name='[Species]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Species]' derivation='None' name='[none:Species:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='54500' id='9' param='horz' type-v2='layout-flow' w='49200' x='50000' y='44500'>
+            <zone fixed-size='160' h='54500' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='49200' x='50000' y='44500'>
+              <zone h='54500' id='3' name='Count of species ' show-caption='true' w='49200' x='50000' y='44500'>
+                <layout-cache fixed-size-h='2500' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='54500' id='14' name='Number of Birds Oberved at Each Site' show-caption='true' w='49200' x='800' y='44500'>
+            <layout-cache type-h='cell' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='43500' id='12' name='Temperature and Number of Observations by Year' show-caption='true' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7250' id='15' name='Temperature and Number of Observations by Year' pane-specification-id='1' param='[federated.1m8rx830la95h41b10xb2198ughw].[:Measure Names]' type-v2='color' w='14000' x='8500' y='21875' />
+        <zone h='6875' id='11' name='Count of species ' param='[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]' type-v2='filter' values='database' w='16800' x='65900' y='0' />
+        <zone h='6750' id='10' mode='checkdropdown' name='Count of species ' param='[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]' type-v2='filter' values='database' w='16000' x='83500' y='0' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='18' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='43500' id='12' is-fixed='true' name='Temperature and Number of Observations by Year' show-caption='true' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7250' id='15' name='Temperature and Number of Observations by Year' pane-specification-id='1' param='[federated.1m8rx830la95h41b10xb2198ughw].[:Measure Names]' type-v2='color' w='14000' x='8500' y='21875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54500' id='14' is-fixed='true' name='Number of Birds Oberved at Each Site' show-caption='true' w='49200' x='800' y='44500'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6875' id='11' name='Count of species ' param='[federated.1m8rx830la95h41b10xb2198ughw].[none:Year:qk]' type-v2='filter' values='database' w='16800' x='65900' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6750' id='10' mode='checkdropdown' name='Count of species ' param='[federated.1m8rx830la95h41b10xb2198ughw].[none:Species:nk]' type-v2='filter' values='database' w='16000' x='83500' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54500' id='3' is-fixed='true' name='Count of species ' show-caption='true' w='49200' x='50000' y='44500'>
+                  <layout-cache fixed-size-h='2500' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{36724826-B395-475C-98C4-E5979858721F}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='2'>
+    <window class='worksheet' name='Count of species '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{961157A4-91AB-4F3D-A971-DA5EBB86BAC9}' />
+    </window>
+    <window class='worksheet' name='temp by year '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E1E74472-766A-4C4B-8972-B77EF6110F4A}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{856EC3C8-4A86-44D1-8710-1CDF7A455850}' />
+    </window>
+    <window class='dashboard' maximized='true' name='NCRN Breeding Bird Dashboard'>
+      <viewpoints>
+        <viewpoint name='Count of species ' />
+        <viewpoint name='Number of Birds Oberved at Each Site'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Temperature and Number of Observations by Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{33A1E598-D9EE-4B6E-9B83-006E6DA60C23}' />
+    </window>
+    <window class='worksheet' name='Temperature and Number of Observations by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1m8rx830la95h41b10xb2198ughw].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5FFCFED5-DB33-4592-A11C-ADB1A544844A}' />
+    </window>
+    <window class='worksheet' name='Number of Birds Oberved at Each Site'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{46A08723-524D-4EAA-95A4-6C03F303A0CE}' />
+    </window>
+  </windows>
+</workbook>
